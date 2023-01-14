@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "unbound-fov",
+  "version": "${version}",
+  "name": "Unbound-Fov",
+  "description": "Get the Freedom of setting your FoV to whatever you want.",
+  "authors": [
+    "Louis"
+  ],
+  "accessWidener": "unbound-fov.accesswidener",
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/Unbound-Fov/icon.png",
+  "environment": "client",
+  "mixins": [
+    "Unbound-Fov.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "minecraft": "1.19.3"
+  }
+}
