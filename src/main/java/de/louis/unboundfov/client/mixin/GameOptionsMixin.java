@@ -35,6 +35,5 @@ public class GameOptionsMixin {
         if(this.fov.getValue() == 1) {
             this.fov.setValue(2);
         }
-        System.out.println(fov.getValue());
     }
 }
