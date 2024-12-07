@@ -31,9 +31,11 @@ public class GameOptionsMixin {
             method = "getFov",
             at = @At(value = "HEAD")
     )
-    public void fix0Crash(CallbackInfoReturnable<SimpleOption<Integer>> cir) {
+    public void fix0And360Crash(CallbackInfoReturnable<SimpleOption<Integer>> cir) {
         if(this.fov.getValue() == 1) {
             this.fov.setValue(2);
+        } else if (this.fov.getValue() == 360) {
+            this.fov.setValue(359);
         }
     }
 }
